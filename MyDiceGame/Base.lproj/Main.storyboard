@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="MyDiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h1I-hf-nmK">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icx-8v-eWV">
+                                        <rect key="frame" x="84" y="0.0" width="152.5" height="39.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="My Dice Game">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="23" name="Cochin-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="a3p-Bk-tmZ">
+                                        <rect key="frame" x="22" y="44.5" width="276" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ykh-m3-ytr">
+                                                <rect key="frame" x="0.0" y="0.0" width="135" height="44"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Enter Your Number:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ow-Ub-JRB">
+                                                <rect key="frame" x="141" y="0.0" width="135" height="44"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fxy-bX-tkJ">
+                                        <rect key="frame" x="20.5" y="93.5" width="279" height="128.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="FIa-ns-orC">
+                                                <rect key="frame" x="20" y="0.0" width="239" height="112"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="oFl-aq-Odk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                                                    </imageView>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="RHB-0n-vKp">
+                                                        <rect key="frame" x="127" y="0.0" width="112" height="112"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="xVC-7S-Chd">
+                                                <rect key="frame" x="16.5" y="113" width="246" height="15.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbW-Lu-tlH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="15.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Your Throw">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="13" name="Cochin-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4U-kN-PcI">
+                                                        <rect key="frame" x="139.5" y="0.0" width="106.5" height="15.5"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Computer's Throw">
+                                                                <attributes>
+                                                                    <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <font key="NSFont" size="13" name="Cochin-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FIa-ns-orC" firstAttribute="leading" secondItem="Fxy-bX-tkJ" secondAttribute="leading" constant="20" id="oV0-eo-SDP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hC-91-3A0">
+                                        <rect key="frame" x="141" y="227" width="38.5" height="26"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Result">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="15" name="Cochin-BoldItalic"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-Ur-UBa">
+                                        <rect key="frame" x="114" y="258" width="92" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84x-KX-Rng">
+                                                <rect key="frame" x="0.0" y="4" width="41" height="17.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Score:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSo-sV-XRS">
+                                                <rect key="frame" x="51" y="4" width="41" height="17.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Score">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IyU-If-OLL">
+                                        <rect key="frame" x="109.5" y="288.5" width="101" height="25.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-oe-SOG">
+                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="25.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Round:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YG8-Me-GMd">
+                                                <rect key="frame" x="57.5" y="0.0" width="43.5" height="25.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Round">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c0d-8b-6ol">
+                                        <rect key="frame" x="41" y="319" width="238" height="43.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZLm-fi-f2E">
+                                                <rect key="frame" x="0.0" y="7" width="109" height="29.5"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Player Dice Roll">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="playerRoll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eVj-vB-vuF"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fd5-OF-hts">
+                                                <rect key="frame" x="129" y="7" width="109" height="29.5"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Reset Game">
+                                                            <attributes>
+                                                                <color key="NSColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <font key="NSFont" size="15" name="Cochin-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqQ-w6-Lj5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jXu-9t-buc">
+                                        <rect key="frame" x="108.5" y="367.5" width="103" height="48.5"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="How To Play">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="Cochin-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="7HJ-Tb-6f2" kind="presentation" modalTransitionStyle="flipHorizontal" id="njB-yb-l6B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9sb-dj-srj">
+                                        <rect key="frame" x="91" y="421" width="138" height="127"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="About the Author">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="18" name="Cochin-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <segue destination="wtw-if-d3j" kind="presentation" modalTransitionStyle="flipHorizontal" id="Yj8-5j-1T3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h1I-hf-nmK" secondAttribute="bottom" id="5pB-cB-jI6"/>
+                            <constraint firstItem="h1I-hf-nmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TB9-Y7-UC3"/>
+                            <constraint firstAttribute="trailing" secondItem="h1I-hf-nmK" secondAttribute="trailing" id="eeE-Cf-5GJ"/>
+                            <constraint firstItem="h1I-hf-nmK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="o5d-AV-N7M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="computerDiceRoll" destination="RHB-0n-vKp" id="R6P-to-IyU"/>
+                        <outlet property="gameRound" destination="YG8-Me-GMd" id="zK4-fw-e3V"/>
+                        <outlet property="gameScore" destination="SSo-sV-XRS" id="T0n-cH-Hqe"/>
+                        <outlet property="playerDiceRoll" destination="oFl-aq-Odk" id="5JL-bQ-sF7"/>
+                        <outlet property="result" destination="9hC-91-3A0" id="Js8-eR-or3"/>
+                        <outlet property="sumNumber" destination="4ow-Ub-JRB" id="24C-2y-Ar5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--How To Play View Controller-->
+        <scene sceneID="U0p-g8-rG7">
+            <objects>
+                <viewController id="7HJ-Tb-6f2" customClass="HowToPlayViewController" customModule="MyDiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8K8-Fs-FQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auW-RU-NaB">
+                                <rect key="frame" x="50" y="50" width="220" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How to Play">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="23" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lTI-dJ-LmN">
+                                <rect key="frame" x="50" y="127" width="220" height="308"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <mutableString key="content">Enter a number between 2 and 12 in the 'Enter Your Number' field.  Play the game by clicking the 'Player Dice Roll' button.  If the sum of computer throw and player throw equals your number entered, you win 2 points else 0.  You can play for a maximum of 10 rounds and 20 points.  If you wish to continue after 10 rounds or want to restart the game, press the 'Reset Game' button.</mutableString>
+                                        <attributes>
+                                            <color key="NSColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Cochin-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54G-Cf-ftw">
+                                <rect key="frame" x="50" y="485" width="220" height="33"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back to Game">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Cochin-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="7HJ-Tb-6f2" eventType="touchUpInside" id="IkX-Lo-eI8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="auW-RU-NaB" firstAttribute="top" secondItem="EjE-vc-mLf" secondAttribute="top" constant="30" id="3oH-JG-XcT"/>
+                            <constraint firstItem="EjE-vc-mLf" firstAttribute="bottom" secondItem="54G-Cf-ftw" secondAttribute="bottom" constant="50" id="5aW-4I-izW"/>
+                            <constraint firstItem="54G-Cf-ftw" firstAttribute="top" secondItem="lTI-dJ-LmN" secondAttribute="bottom" constant="50" id="AVm-Hc-D3r"/>
+                            <constraint firstItem="54G-Cf-ftw" firstAttribute="leading" secondItem="EjE-vc-mLf" secondAttribute="leading" constant="50" id="Acr-D5-lPk"/>
+                            <constraint firstItem="EjE-vc-mLf" firstAttribute="trailing" secondItem="auW-RU-NaB" secondAttribute="trailing" constant="50" id="QOC-A9-TKF"/>
+                            <constraint firstItem="auW-RU-NaB" firstAttribute="leading" secondItem="EjE-vc-mLf" secondAttribute="leading" constant="50" id="h6j-kh-JCX"/>
+                            <constraint firstItem="lTI-dJ-LmN" firstAttribute="leading" secondItem="EjE-vc-mLf" secondAttribute="leading" constant="50" id="jNB-TQ-dbd"/>
+                            <constraint firstItem="EjE-vc-mLf" firstAttribute="trailing" secondItem="lTI-dJ-LmN" secondAttribute="trailing" constant="50" id="qWX-AZ-FWS"/>
+                            <constraint firstItem="lTI-dJ-LmN" firstAttribute="top" secondItem="auW-RU-NaB" secondAttribute="bottom" constant="50" id="wsj-vN-S2F"/>
+                            <constraint firstItem="EjE-vc-mLf" firstAttribute="trailing" secondItem="54G-Cf-ftw" secondAttribute="trailing" constant="50" id="z7G-R1-Fef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EjE-vc-mLf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BVm-hw-tTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="557.74647887323943"/>
+        </scene>
+        <!--Author View Controller-->
+        <scene sceneID="ac6-5o-MkZ">
+            <objects>
+                <viewController id="wtw-if-d3j" customClass="AuthorViewController" customModule="MyDiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U7D-mn-O4d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibn-fB-p5c">
+                                <rect key="frame" x="50" y="50" width="220" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Author">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="23" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rfU-dr-LAy">
+                                <rect key="frame" x="50" y="127" width="220" height="308"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Hi! This is Namrata Arkalgud. I am currently building my second iOS application which is this game. MyDiceGame is the app for my Mobile Application Programming class. Hope you enjoy it!</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Cochin-Italic"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O62-JG-lvu">
+                                <rect key="frame" x="50" y="485" width="220" height="33"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Back to Game">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Cochin-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="wtw-if-d3j" eventType="touchUpInside" id="Iww-KU-tFs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ibn-fB-p5c" firstAttribute="top" secondItem="eFW-CG-CxW" secondAttribute="top" constant="30" id="2Sb-Es-0tj"/>
+                            <constraint firstItem="rfU-dr-LAy" firstAttribute="leading" secondItem="eFW-CG-CxW" secondAttribute="leading" constant="50" id="EML-V2-LxF"/>
+                            <constraint firstItem="eFW-CG-CxW" firstAttribute="trailing" secondItem="O62-JG-lvu" secondAttribute="trailing" constant="50" id="Ull-sD-KnB"/>
+                            <constraint firstItem="eFW-CG-CxW" firstAttribute="trailing" secondItem="rfU-dr-LAy" secondAttribute="trailing" constant="50" id="VPq-Yi-tMK"/>
+                            <constraint firstItem="eFW-CG-CxW" firstAttribute="bottom" secondItem="O62-JG-lvu" secondAttribute="bottom" constant="50" id="bHI-rN-bL3"/>
+                            <constraint firstItem="ibn-fB-p5c" firstAttribute="leading" secondItem="eFW-CG-CxW" secondAttribute="leading" constant="50" id="eU6-rn-Bhu"/>
+                            <constraint firstItem="O62-JG-lvu" firstAttribute="top" secondItem="rfU-dr-LAy" secondAttribute="bottom" constant="50" id="fUe-Yy-7Ki"/>
+                            <constraint firstItem="rfU-dr-LAy" firstAttribute="top" secondItem="ibn-fB-p5c" secondAttribute="bottom" constant="50" id="jqp-tO-UFo"/>
+                            <constraint firstItem="eFW-CG-CxW" firstAttribute="trailing" secondItem="ibn-fB-p5c" secondAttribute="trailing" constant="50" id="mBu-vb-d0L"/>
+                            <constraint firstItem="O62-JG-lvu" firstAttribute="leading" secondItem="eFW-CG-CxW" secondAttribute="leading" constant="50" id="xHW-JO-9T7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eFW-CG-CxW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IbV-ng-bGc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVU-s5-HzC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1035" y="-348.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="6" width="112" height="112"/>
+    </resources>
+</document>
